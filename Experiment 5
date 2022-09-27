@@ -1,0 +1,29 @@
+#include<stdio.h> 
+#include<conio.h> 
+void main() 
+{ 
+char s[5]; 
+clrscr(); 
+printf("\n Enter any operator:"); 
+gets(s); 
+switch(s[0]) 
+{ 
+case'>': if(s[1]=='=') 
+printf("\n Greater than or equal"); 
+else 
+printf("\n Greater than"); 
+break; 
+case'<': if(s[1]=='=') 
+printf("\n Less than or equal"); 
+else 
+printf("\nLess than"); 
+break; 
+case'=': if(s[1]=='=') 
+printf("\nEqual to"); 
+else printf("\nAssignment"); break; 
+case'!': if(s[1]=='=') 
+printf("\nNot Equal"); 
+else 
+printf("\n Bit Not"); 
+break; 
+case'&': if(s[1]=='&')
